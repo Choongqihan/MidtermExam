@@ -6,7 +6,7 @@
     dest: /etc/yum.repos.d/
 
 - name: Install grafana
-  dnf:
+  yum:
     name: grafana
     state: latest
     update_cache: yes
@@ -22,7 +22,7 @@
     dest: /etc/yum.repos.d
 
 - name: Install prometheus
-  dnf:
+  yum:
     name: prometheus2
     state: latest
     update_cache: yes
@@ -38,7 +38,7 @@
     dest: /etc/yum.repos.d/
 
 - name: Install influxdb
-  dnf:
+  yum:
     name: influxdb
     state: latest
     update_cache: yes

@@ -26,11 +26,6 @@
     regexp: 'http.port:'
     line: 'https.port: 9200'
 
-- name: Run elasticsearch
-  service:
-    name: elasticsearch
-    state: started
-
 - name: Install logstash repo
   yum_repository:
     name: Elastic repository for 7.x packages
